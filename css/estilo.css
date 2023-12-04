@@ -1,0 +1,105 @@
+/*
+ * # AYTY - 1.0.0
+ * Customização do Semantic UI - 2.2.10
+ * http://www.semantic-ui.com/
+ *
+ * Copyright 2017
+ *
+ */
+
+p {
+    font-size: 12pt;
+}
+
+.hidden.menu {
+    display: none;
+}
+
+.ui.inverted.menu {
+    background: rgba(0, 0, 0, 0.95);      
+    font-family:'Caviar Dreams Bold' !important;
+}
+
+.ui.inverted.menu .active.item {
+    color: #fc0 !important;
+    border-top-style: solid;
+    border-top-color: #fc0;
+}
+
+.button.amarelo {
+    background-color: #fc0;
+}
+
+.ui.pointing.menu .active.item::after {
+    visibility: hidden;
+}
+
+.ui.vertical.segment {
+    border-bottom: none !important;
+}
+
+.masthead.segment {
+    min-height: 100vh;
+    padding-top: 12em;
+}
+.masthead h2, .masthead h3 {
+    margin-top: 2em;
+}
+
+.masthead img {
+    width: 250px;
+}
+
+.stripe.segment {
+    min-height: 100vh;
+}
+
+.ui.inverted.masthead {
+    background-image: url("../img/man-coffee-cup-pen.jpg");
+    background-size: cover;
+}
+
+.ui.vertical.segment.shadow {
+    box-shadow: inset 0px 13px 6px -5px rgba(0,0,0,0.17);
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.fonte {
+    font-family:'Caviar Dreams Bold' !important;
+    font-weight:normal !important;
+    font-size:50px !important;
+    color: #a0a0a0 !important;
+}
+
+.footer.segment {
+    padding: 5em 0em;
+}
+
+.fixed.pointing.menu .toc.item {
+    display: none;
+}
+
+@media only screen and (max-width: 930px) {
+    .right.menu {
+    display: none !important;
+    }
+    .fixed.pointing.menu .toc.item {
+    display: flex;
+    }
+    .masthead.segment {
+    min-height: 100vh;
+    padding-top: 12em;
+    }
+    .masthead h2 {
+    margin-top: 0.8em;
+    font-size: 1.3em;
+    }
+    .masthead h3 {
+    margin-top: 0.8em;
+    font-size: 1em;
+    }
+    .masthead img {
+    width: 190px;
+    }
+}

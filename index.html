@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="author" content="François Júnior">
+
+  <link rel="image_src" type="image/jpeg" href="./img/ayty_logo.png" />
+  <link rel="icon" type="image/jpeg" href="./img/ayty_logo.png" />
+
+  <!-- Site Properties -->
+  <title>ayty</title>    
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/components/reset.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/components/site.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="./font/fonte.css">
+  <link rel="stylesheet" type="text/css" href="./css/estilo.css">
+
+    
+  <script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/g/semantic-ui@2.2.10(components/visibility.min.js+components/transition.min.js+components/sidebar.min.js+components/tab.min.js+components/form.min.js)"></script>
+  <script src="./js/ddscrollspy.js"></script>
+  <script src="./js/tweetie.js"></script>
+  <script src="./js/ayty.js"></script>
+
+</head>
+<body>
+
+<!-- Sidebar Menu -->
+<div id="sidebarMenu" class="ui vertical inverted sidebar menu">
+  <a class="item" href="#home">Home</a>
+  <a class="item" href="#sobre">Sobre</a>
+  <a class="item" href="#servicos">Serviços</a>
+  <a class="item" href="#clientes">Clientes</a>
+  <a class="item" href="#equipe">Equipe</a>
+  <a class="item" href="#noticias">Notícias</a>
+  <a class="item" href="#contato">Contato</a>
+</div>
+
+<!-- Menu Fixo -->
+<div class="ui large inverted fixed pointing borderless menu">  
+  <div class="ui container">
+    <div class="item">
+      <img class="ui small image cls" src="./img/ayty_logo_h_b.svg">
+    </div>
+    <div id="mainMenu" class="right menu">
+      <a class="item" href="#home">HOME</a>
+      <a class="item" href="#sobre">SOBRE</a>
+      <a class="item" href="#servicos">SERVIÇOS</a>
+      <a class="item" href="#clientes">CLIENTES</a>
+      <a class="item" href="#equipe">EQUIPE</a>
+      <a class="item" href="#noticias">NOTÍCIAS</a>
+      <a class="item" href="#contato">CONTATO</a>
+    </div>
+    <a class="right float toc item">
+      <i class="sidebar icon"></i>
+    </a>
+  </div>
+</div>
+
+
+<!-- Page Contents -->
+<div class="pusher">
+
+  <!-- Cabeçalho -->
+  <div id="home" class="ui inverted vertical masthead center aligned segment bg1">
+    <div class="ui text container">
+      <img src="./img/ayty_logo_v_b.svg">
+      <h2 >Núcleo de Ciência e Tecnologia</h2>
+      <h3>Capacitação, Consultoria e Desenvolvimento</h3>
+    </div>
+  </div>
+
+  <!-- Sobre -->
+  <div id="sobre" class="ui vertical stripe segment shadow">
+    <div class="ui middle aligned stackable grid container">
+      
+      <div class="row">
+        <div class="center aligned column">
+          <h1 class="ui header fonte">SOBRE</h1>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="eleven wide column">
+          <h2 class="ui header">QUEM SOMOS</h2>
+          <p>O Ayty - Núcleo de Ciência e Tecnologia - é um grupo formado por professores do Departamento de Ciências Exatas do Campus IV da Universidade Federal da Paraíba localizado no município de Rio Tinto.</p>
+          <p>&nbsp;</p>
+          <h2 class="ui header">O QUE FAZEMOS</h2>
+          <p>Como visão, o Ayty pretende promover a integração entre academia e mercado através do estabelecimento de parcerias e cooperação técnico-científica com foco em três pilares: (i) capacitação, (ii) consultoria e (iii) pesquisa e desenvolvimento.</p>
+        </div>
+        <div class="five wide right floated column">
+          <img class="ui medium bordered rounded image" src="./img/class.jpg" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Serviços -->
+  <div id="servicos" class="ui vertical stripe inverted segment shadow">
+    
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="center aligned column">          
+          <h1 class="ui header fonte">SERVIÇOS</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui three column doubling stackable grid container">
+      
+      <div class="center aligned column">
+        <img src="./img/icon_capacitacao.png">
+        <h2 class="ui inverted header">CAPACITAÇÃO</h2>
+        <p>Organização de cursos de curta duração, palestras e seminários sobre temas relacionados à TI.</p> 
+        <button id="btn-capacitacao" class="ui blue button">Mais detalhes</button>
+      </div>
+      
+      <div class="center aligned column">
+        <img src="./img/icon_consultoria.png">
+        <h2 class="ui inverted header">CONSULTORIA</h2>
+        <p>Consultoria em aceleração de empresas para o mercado, planejamento estratégico, governança de TI, marketing digital, modelagem e redesenho de processos de negócio e melhoria de processos de desenvolvimento de software.</p>
+        <button class="ui red button">Mais detalhes</button>
+      </div>
+      
+      <div class="center aligned column">
+        <img src="./img/icon_produtos.png">
+        <h2 class="ui inverted header">PESQUISA E DESENVOLVIMENTO</h2>
+        <p>Pesquisa e desenvolvimento de soluções transacionais ou analíticas, desktop ou mobile, para automatização de negócios e apoio ao ensino-aprendizagem.</p>
+        <button class="ui pink button">Mais detalhes</button>
+      </div>
+
+    </div>
+
+    <!-- Abas descritivas dos serviços 
+    <div class="ui middle aligner stackable grid container">
+      <div class="row">
+        <div id="abas-container" class="column">
+          <div id="abas-capacitacao" class="ui top attached tabular menu">
+            <a class="item active" data-tab="tab-name">Serviço 1</a>
+            <a class="item" data-tab="tab-name2"> Serviço 2</a>
+            <a class="item" data-tab="tab-name3">Serviço 3</a>
+          </div>
+          <div class="ui tab bottom attached segment active" data-tab="tab-name">
+            Descrição do item 1
+          </div>
+          <div class="ui tab bottom attached segment" data-tab="tab-name2">
+            Descrição do item 2
+          </div>
+          <div class="ui tab bottom attached segment" data-tab="tab-name3">
+            Descrição do item 3
+          </div>
+        </div>
+      </div>
+    </div>-->
+
+  </div>
+
+  <!-- Clientes -->
+  <div id="clientes" class="ui vertical stripe segment shadow">
+    
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="center aligned column">          
+          <h1 class="ui header fonte">CLIENTES</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui two column doubling stackable grid container">
+      
+      <div class="center aligned column">
+        <img class="ui centered small image" src="./img/clientes/prg.png">
+        <h3 class="ui header">PRG - Pró-reitoria de Graduação da UFPB</h3>
+      </div>
+      
+      <div class="center aligned column">
+        <img class="ui centered small image" src="./img/clientes/dppb.png">
+        <h3 class="ui header">Defensoria Pública do Estado da Paraíba</h3>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Equipe -->
+  <div id="equipe" class="ui vertical stripe inverted segment shadow">
+    
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="center aligned column">          
+          <h1 class="ui header fonte">EQUIPE</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui five column doubling stackable grid container">
+
+      <div class="center aligned column">
+        <img class="ui centered tiny circular image" src="./img/equipe/adson_cunha.jpg">
+        <h3 class="ui inverted header">
+          Adson Cunha
+          <div class="sub header">PhD, PMP®, CSM®</div>
+        </h3>        
+        <p>
+          <a href="http://lattes.cnpq.br/3912060609881766" target="_blank" class="ui mini image"><img src="./img/icon_lattes.png" title="Currículo Lattes"></a>
+          <a href="mailto:adson@dcx.ufpb.br" class="ui mini image"><img src="./img/icon_mail.png" title="E-Mail"></a>
+          <a href="https://www.linkedin.com/in/adson-cunha-81176123/" target="_blank" class="ui mini image"><img src="./img/icon_linkedin.png" title="LinkedIn"></a>
+          <a href="https://twitter.com/adsoncunha" target="_blank" class="ui mini image"><img src="./img/icon_twitter2.png" title="Twitter"></a>
+        </p>
+        <p>Engenharia de Software, Gerenciamento de Projetos de Software, Gerenciamento de Processos de Negócio e Ciência de Dados</p>
+      </div>
+
+      <div class="center aligned column">
+        <img class="ui centered tiny circular image" src="./img/equipe/alexandre_scaico.png">
+        <h3 class="ui inverted header">
+          Alexandre Scaico
+          <div class="sub header">PhD</div>
+        </h3>        
+        <p>
+          <a href="http://lattes.cnpq.br/2170883710338227" target="_blank" class="ui mini image"><img src="./img/icon_lattes.png" title="Currículo Lattes"></a>
+          <a href="mailto:alexandre@ccae.ufpb.br" class="ui mini image"><img src="./img/icon_mail.png" title="E-Mail"></a>
+          <a href="https://www.linkedin.com/in/alexandre-scaico-52985323/" target="_blank" class="ui mini image"><img src="./img/icon_linkedin.png" title="LinkedIn"></a>
+        </p>
+        <p>Métodos Formais, Interação Humano-Computador, Linhas de Produtos de Software e Segurança de Sistemas</p>
+      </div>
+
+      <div class="center aligned column">
+        <img class="ui centered tiny circular image" src="./img/equipe/ayla_reboucas.png">
+        <h3 class="ui inverted header">
+          Ayla Rebouças
+          <div class="sub header">PhD</div>
+        </h3>
+        <p>
+          <a href="http://lattes.cnpq.br/1095204533816403" target="_blank" class="ui mini image"><img src="./img/icon_lattes.png" title="Currículo Lattes"></a>
+          <a href="mailto:ayla@dcx.ufpb.br" class="ui mini image"><img src="./img/icon_mail.png" title="E-Mail"></a>
+          <a href="https://www.linkedin.com/in/ayla-dantas-1256802/" target="_blank" class="ui mini image"><img src="./img/icon_linkedin.png" title="LinkedIn"></a>
+          <a href="https://twitter.com/ayladebora" target="_blank" class="ui mini image"><img src="./img/icon_twitter2.png" title="Twitter"></a>
+        </p>
+        <p>Informática na Educação, Engenharia de Software, Sistemas Distribuídos e Sistemas Adaptativos</p>
+      </div>
+
+      <div class="center aligned column">
+        <img class="ui centered tiny circular image" src="./img/equipe/carlos_dias.png">
+        <h3 class="ui inverted header">
+          Carlos Hacks
+          <div class="sub header">PhD</div>
+        </h3>
+        <p>
+          <a href="http://lattes.cnpq.br/4443525742665663" target="_blank" class="ui mini image"><img src="./img/icon_lattes.png" title="Currículo Lattes"></a>
+          <a href="mailto:hacks@dcx.ufpb.br" class="ui mini image"><img src="./img/icon_mail.png" title="E-Mail"></a>
+        </p>
+        <p>Vídeo Digital, TV Digital, Transmissão de Vídeo e Redes de Intercâmbio de Conteúdo</p>
+      </div>
+
+      <div class="center aligned column">
+        <img class="ui centered tiny circular image" src="./img/equipe/luiz_mauricio.jpg">
+        <h3 class="ui inverted header">
+          Luiz Maurício
+          <div class="sub header">PhD</div>
+        </h3>
+        <p>
+          <a href="http://lattes.cnpq.br/8775289597756122" target="_blank" class="ui mini image"><img src="./img/icon_lattes.png" title="Currículo Lattes"></a>
+          <a href="mailto:luizmauricio@dcx.ufpb.br" class="ui mini image"><img src="./img/icon_mail.png" title="E-Mail"></a>
+          <a href="https://www.linkedin.com/in/lumauricio/" target="_blank" class="ui mini image"><img src="./img/icon_linkedin.png" title="LinkedIn"></a>
+        </p>
+        <p>Governança de TI, Gerenciamento de Processos de Negócios, Gerenciamento de Projetos de TI, Redes Sociais, Mineração de Dados, Desenho de negócios inovadores e mentoria para criação e aceleração de startups</p>
+      </div>
+
+      <div class="center aligned column">
+        <img class="ui centered tiny circular image" src="./img/equipe/marcus_carvalho.png">
+        <h3 class="ui inverted header">
+          Marcus Carvalho
+          <div class="sub header">PhD</div>
+        </h3>
+        <p>
+          <a href="http://lattes.cnpq.br/4764601053478564" target="_blank" class="ui mini image"><img src="./img/icon_lattes.png" title="Currículo Lattes"></a>
+          <a href="mailto:marcuswac@dcx.ufpb.br" class="ui mini image"><img src="./img/icon_mail.png" title="E-Mail"></a>
+          <a href="https://www.linkedin.com/in/marcus-carvalho-0b55b312/" target="_blank" class="ui mini image"><img src="./img/icon_linkedin.png" title="LinkedIn"></a>
+        </p>
+        <p>Computação em Nuvem, Grades Computacionais, Análise de Dados, Modelagem e Análise de Desempenho de Sistemas</p>
+      </div>
+
+      <div class="center aligned column">
+        <img class="ui centered tiny circular image" src="./img/equipe/rodrigo_reboucas.png">
+        <h3 class="ui inverted header">
+          Rodrigo Rebouças
+          <div class="sub header">MsC</div>
+        </h3>
+        <p>
+          <a href="http://lattes.cnpq.br/4221517374410995" target="_blank" class="ui mini image"><img src="./img/icon_lattes.png" title="Currículo Lattes"></a>
+          <a href="mailto:rodrigor@dcx.ufpb.br" class="ui mini image"><img src="./img/icon_mail.png" title="E-Mail"></a>
+          <a href="https://www.linkedin.com/in/rodrigoreboucas/" target="_blank" class="ui mini image"><img src="./img/icon_linkedin.png" title="LinkedIn"></a>
+          <a href="https://twitter.com/rodrigor" target="_blank" class="ui mini image"><img src="./img/icon_twitter2.png" title="Twitter"></a>
+        </p>
+        <p>Gerenciamento de Processos de Negócio, Engenharia de Softfware</p>
+      </div>
+
+      <div class="center aligned column">
+        <img class="ui centered tiny circular image" src="./img/equipe/yuri_malheiros.png">
+        <h3 class="ui inverted header">
+          Yuri Malheiros
+          <div class="sub header">PhD</div>
+        </h3>
+        <p>
+          <a href="http://lattes.cnpq.br/6396235096236217" target="_blank" class="ui mini image"><img src="./img/icon_lattes.png" title="Currículo Lattes"></a>
+          <a href="mailto:yuri@dcx.ufpb.br" class="ui mini image"><img src="./img/icon_mail.png" title="E-Mail"></a>
+          <a href="https://www.linkedin.com/in/yurimalheiros/" target="_blank" class="ui mini image"><img src="./img/icon_linkedin.png" title="LinkedIn"></a>
+          <a href="https://twitter.com/yurimalheiros" target="_blank" class="ui mini image"><img src="./img/icon_twitter2.png" title="Twitter"></a>
+        </p>
+        <p>Inteligência Artificial, Web Semântica, Aprendizagem de Máquina e Ontologias</p>
+      </div>
+
+      <div class="center aligned column">
+        <img class="ui centered tiny circular image" src="./img/equipe/yuska_paola.jpg">
+        <h3 class="ui inverted header">
+          Yuska Aguiar
+          <div class="sub header">PhD</div>
+        </h3>
+        <p>
+          <a href="http://lattes.cnpq.br/9794253016107545" target="_blank" class="ui mini image"><img src="./img/icon_lattes.png" title="Currículo Lattes"></a>
+          <a href="mailto:yuska@dcx.ufpb.br" class="ui mini image"><img src="./img/icon_mail.png" title="E-Mail"></a>
+        </p>
+        <p>Interação Humano-Computador, Tecnologias Assistivas Baseadas em Computador, Informática na Educação e Engenharia de Software</p>
+      </div>
+      
+    </div>
+
+  </div>
+
+  <!-- Notícias -->
+   <div id="noticias" class="ui vertical stripe segment shadow">
+    
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="center aligned column">          
+          <h1 class="ui header fonte">NOTÍCIAS</h1>
+        </div>
+      </div>
+    </div>
+      
+    <div class="ui two column doubling stackable grid container">
+      
+      <div class="center aligned column"> 
+        <h2 class="ui orange icon header">
+          <i class="feed icon"></i>
+          <div class="content">Feed</div>
+        </h2>
+        <p>Feed de notícias</p>
+      </div>
+      
+      <div class="center aligned column">
+        <div class="ui blue segment">
+          <h2 class="ui blue icon header">
+            <i class="twitter icon"></i>
+            <div class="content">Twitter</div>
+          </h2>
+          <div id="twitter-container" class="ui two column doubling stackable grid container"></div>
+        </div>
+      </div>
+
+    </div>    
+    
+  </div>
+
+  <!-- Contato -->
+   <div id="contato" class="ui vertical stripe inverted segment shadow">
+    
+    <div class="ui aligned stackable grid container">
+      <div class="row">
+        <div class="center aligned column">          
+          <h1 class="ui header fonte">CONTATO</h1>
+        </div>
+      </div> 
+    </div> 
+
+    <div class="ui two column doubling stackable grid container">
+      
+      <div class="center aligned column"> 
+        <h2 class="ui inverted icon header">
+          <i class="pin icon"></i>
+          <div class="content">
+            Endereço
+            <div class="sub header">UFPB Campus IV - Centro de Ciências Aplicadas e Educação<br />Av. Santa Elisabete, 160, Rio Tinto - PB, CEP 58297-000</div>
+          </div>
+        </h2>
+        <br />
+        <br />
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1841.9848846637485!2d-35.07601827426025!3d-6.805353860360034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x58be816832342ca8!2sUFPB+-+Campus+IV+%2F+Centro+de+Ci%C3%AAncias+Aplicadas+e+Educa%C3%A7%C3%A3o+-+CCAE!5e0!3m2!1spt-BR!2sbr!4v1499996184222" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      
+      <div class="center aligned column">
+        <h2 class="ui inverted icon header">
+          <i class="mail icon"></i>
+          <div class="content">
+            Formulário de Contato
+            <div class="sub header">Entre em contato conosco através do formulário abaixo que responderemos o mais breve possível.</div>
+          </div>
+        </h2>
+        
+        <div class="ui form">
+          <div class="ui inverted stacked segment">
+            <div class="field">
+              <div class="ui left icon input">
+                <i class="user icon"></i>
+                <input type="text" id="nome" name="nome" placeholder="Nome...">
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui left icon input">
+                <i class="mail icon"></i>
+                <input type="text" id="email" name="email" placeholder="E-mail...">
+              </div>
+            </div>
+            <div class="field">
+              <textarea id="mensagem" name="mensagem" placeholder="Mensagem..."></textarea>
+            </div>
+            <div class="ui error message"></div>
+            <div class="ui success message"></div>
+            <div class="ui fluid large blue submit button">Enviar Mensagem</div>
+            <div class="ui inactive dimmer">
+              <div class="ui text loader">Enviando...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>          
+    
+    <!-- Rodapé imbutido -->
+    <div class="ui middle aligned stackable grid container">
+      
+      <div class="row">
+        <div class="center aligned column">
+          <img class="ui centered small image" src="./img/ayty_logo_v_b.svg">          
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="center aligned column">
+          <div class="ui mini images">
+            <a target="_blank" href="https://www.facebook.com/nucleo.ayty/"><img class="ui image" src="./img/icon_facebook.png"></a>
+            <a target="_blank" href="https://twitter.com/ayty_ufpb"><img class="ui image" src="./img/icon_twitter.png"></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="center aligned column">
+          <p>Copyright 2017. Todos os direitos reservados.</p>
+          <p>Desenvolvido por <a href="https://www.linkedin.com/in/francoisjunior/" target="_blank">François Júnior</a></p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+
+</html>
